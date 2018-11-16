@@ -9,6 +9,7 @@ package com.revature.model;
 public class Customer {
 	/**
 	 * C_ID
+	 * always add as null to toggle auto-increment
 	 */
 	private long id;
 	/**
@@ -23,21 +24,31 @@ public class Customer {
 	 * C_BALANCE
 	 */
 	private double balance;
+	/**
+	 * C_FIRSTNAME
+	 */
+	private String firstName;
+	/**
+	 * C_LASTNAME
+	 */
+	private String lastName;
 	
 	/* Constructors */
 	
 	public Customer() { }
-	
-	public Customer(long id, String username, String password, double balance) {
+
+	public Customer(long id, String username, String password, double balance, String firstName, String lastName) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.balance = balance;
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
-	
-	/* Getters and Setters */
 
+	/* Getters and Setters */
+	
 	public long getId() {
 		return id;
 	}
@@ -69,7 +80,21 @@ public class Customer {
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
-	
-	
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 	
 }

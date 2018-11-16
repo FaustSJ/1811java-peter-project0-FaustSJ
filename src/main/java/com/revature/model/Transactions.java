@@ -97,7 +97,10 @@ public class Transactions {
 		this.customer = customer;
 	}
 	
-	
+	public String toString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }

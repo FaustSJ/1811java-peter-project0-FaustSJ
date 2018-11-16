@@ -71,10 +71,6 @@ public class Main {
 		 * 
 		 */
 		
-		
-		System.out.println("Menu:");
-		System.out.println("Log in");
-		System.out.println("");
 
 	}
 }
