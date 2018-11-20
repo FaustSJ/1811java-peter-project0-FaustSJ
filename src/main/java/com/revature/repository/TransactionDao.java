@@ -1,5 +1,8 @@
 package com.revature.repository;
 
+import java.util.Set;
+
+import com.revature.model.Customer;
 import com.revature.model.Transactions;
 
 /**
@@ -10,4 +13,5 @@ import com.revature.model.Transactions;
 public interface TransactionDao {
 
 	boolean insert(Transactions transaction);
+	Set<Transactions> getTransactionsForCustomer(Customer customer);
 }

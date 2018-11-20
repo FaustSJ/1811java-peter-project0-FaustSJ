@@ -5,17 +5,26 @@ import java.util.Set;
 
 import com.revature.model.Customer;
 import com.revature.model.Transactions;
+import com.revature.service.CustomerService;
+import com.revature.service.CustomerServiceImpl;
+import com.revature.service.TransactionsService;
+import com.revature.service.TransactionsServiceImpl;
 
 public class Session {
 
+	CustomerService service = new CustomerServiceImpl();
+	TransactionsService tranService = new TransactionsServiceImpl();
+	
 	public void welcomeScreen(){
 		String input = "0";
+		Scanner inputGetter = new Scanner(null);
+		
 		while(!input.equals("3")){
 			System.out.println("WELCOME");
 			System.out.println("1) Register");
 			System.out.println("2) Login");
 			System.out.println("3) Quit");
-			input = Scanner.getLine();
+			input = Scanner.nextLine();
 			
 			if(input.equals("1")) {
 				System.out.println("\n\n");
@@ -36,15 +45,15 @@ public class Session {
 		boolean usernameIsTaken = true;
 		while(usernameIsTaken) {
 			String username = Scanner.getLine();
-			usernameIsTaken = checkIfUsernameIsTaken(username);
+			usernameIsTaken = service.checkIfUsernameIsTaken(username);
 			if(usernameIsTaken) {
 				System.out.println("That username is taken!");
 				System.out.print("Try another one: ");
 		}	}
 		String password = Scanner.getLine();
 		
-		Customer newCustomer = new Customer(firstName, lastName, username, password);;
-		insertNewCustomer(newCustomer);
+		Customer newCustomer = new Customer(firstName, lastName, username, password);
+		service.registerNewCustomer(newCustomer);
 		System.out.println("You have been added!");
 		Thread.sleep(3000);
 		System.out.println("\n\n");
@@ -60,7 +69,7 @@ public class Session {
 			username = Scanner.getLine();
 			password = Scanner.getLine();
 			try {
-				customer = getCustomerByUsernameAndPassword(username, password);
+				customer = service.getCustomerByUsernameAndPassword(username, password);
 				notValidLogin = false;
 			} catch () {
 				System.out.println("Invalid login. Try again.");
@@ -115,8 +124,10 @@ public class Session {
 				System.out.println("Please enter a monetary value.\n");
 				continue;
 			}
-			updateCustomerBalance(customer, customer.getBalance()+deposit);
-			addNewTransaction(customer, "Deposit", customer.getBalance()+deposit);
+			service.updateCustomerBalance(customer, customer.getBalance()+deposit);
+			Transactions = new Transactions(customer, "Deposit", customer.getBalance()+deposit);
+			tranService.addNewTransaction(newTransaction);
+			
 			System.out.println("Your deposit has been processed.");
 		}
 		System.out.println("\n\n");

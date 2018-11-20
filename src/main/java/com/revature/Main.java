@@ -2,6 +2,8 @@ package com.revature;
 
 import org.apache.log4j.Logger;
 
+import com.revature.controller.Session;
+
 /** 
  * Create an instance of your controller and launch your application.
  * 
@@ -12,6 +14,8 @@ public class Main {
 	private static final Logger LOGGER = Logger.getLogger(Main.class);
 	
 	public static void main(String[] args) {
+		
+		new Session().welcomeScreen();
 		
 		/*
 		 * login, logout
