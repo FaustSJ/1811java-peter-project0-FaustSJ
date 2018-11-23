@@ -17,8 +17,8 @@ public class TransactionsServiceImpl implements TransactionsService {
 	TransactionDao dao = new TransactionDaoJdbc();
 	
 	@Override
-	public boolean addNewTransaction(Transactions transaction) {
-		return dao.insert(transaction);
+	public boolean addNewTransaction(String transactionType, double originalBalance, double newBalance, Customer customer) {
+		return dao.insert(transactionType, originalBalance, newBalance, customer);
 	}
 
 	@Override
@@ -27,3 +27,4 @@ public class TransactionsServiceImpl implements TransactionsService {
 	}
 
 }
+

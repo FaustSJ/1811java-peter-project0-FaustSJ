@@ -12,6 +12,6 @@ import com.revature.model.Transactions;
  */
 public interface TransactionDao {
 
-	boolean insert(Transactions transaction);
+	boolean insert(String transactionType, double originalBalance, double newBalance, Customer customer);
 	Set<Transactions> getTransactionsForCustomer(Customer customer);
 }

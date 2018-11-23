@@ -12,19 +12,24 @@ import com.revature.service.TransactionsServiceImpl;
 
 public class Session {
 
-	CustomerService service = new CustomerServiceImpl();
-	TransactionsService tranService = new TransactionsServiceImpl();
+	private CustomerService service = new CustomerServiceImpl();
+	private TransactionsService tranService = new TransactionsServiceImpl();
+	private Scanner scanner;
+	
+	public Session() {
+		this.scanner = new Scanner(System.in);
+	}
 	
 	public void welcomeScreen(){
 		String input = "0";
-		Scanner inputGetter = new Scanner(null);
 		
 		while(!input.equals("3")){
 			System.out.println("WELCOME");
 			System.out.println("1) Register");
 			System.out.println("2) Login");
 			System.out.println("3) Quit");
-			input = Scanner.nextLine();
+			input = scanner.nextLine();
+			input = input.trim();
 			
 			if(input.equals("1")) {
 				System.out.println("\n\n");
@@ -35,27 +40,32 @@ public class Session {
 				login();
 			}
 		}
+		
+		scanner.close();
 	}
 	
 	
 	public void register() {
-		String firstName = Scanner.getLine();
-		String lastName = Scanner.getLine();
+		System.out.print("First name: ");
+		String firstName = scanner.nextLine();
+		System.out.print("Last name: ");
+		String lastName = scanner.nextLine();
 		String username = "";
 		boolean usernameIsTaken = true;
 		while(usernameIsTaken) {
-			String username = Scanner.getLine();
+			System.out.print("Username: ");
+			username = scanner.nextLine();
 			usernameIsTaken = service.checkIfUsernameIsTaken(username);
 			if(usernameIsTaken) {
 				System.out.println("That username is taken!");
-				System.out.print("Try another one: ");
+				System.out.println("Try another one.");
 		}	}
-		String password = Scanner.getLine();
+		System.out.print("Password: ");
+		String password = scanner.nextLine();
 		
-		Customer newCustomer = new Customer(firstName, lastName, username, password);
+		Customer newCustomer = new Customer(username, password, firstName, lastName, 0.00);
 		service.registerNewCustomer(newCustomer);
 		System.out.println("You have been added!");
-		Thread.sleep(3000);
 		System.out.println("\n\n");
 		welcomeScreen();
 	}
@@ -63,15 +73,17 @@ public class Session {
 	public void login() {
 		String username = "";
 		String password = "";
-		Customer customer;
+		Customer customer = null;
 		boolean notValidLogin = true;
 		while(notValidLogin) {
-			username = Scanner.getLine();
-			password = Scanner.getLine();
-			try {
-				customer = service.getCustomerByUsernameAndPassword(username, password);
+			System.out.print("Username: ");
+			username = scanner.nextLine();
+			System.out.print("Password: ");
+			password = scanner.nextLine();
+			customer = service.getCustomerByUsernameAndPassword(username, password);
+			if(customer != null) {
 				notValidLogin = false;
-			} catch () {
+			} else {
 				System.out.println("Invalid login. Try again.");
 			}
 		}
@@ -88,7 +100,7 @@ public class Session {
 			System.out.println("2) Withdraw");
 			System.out.println("3) View Transactions");
 			System.out.println("4) Logout");
-			input = Scanner.getLine();
+			input = scanner.nextLine();
 			
 			if(input.equals("1")) {
 				System.out.println("\n\n");
@@ -115,7 +127,7 @@ public class Session {
 			System.out.println("Your current balance is $"+customer.getBalance());
 			System.out.println("How much would you like to deposit?");
 			System.out.println("(Type 'back' to go the main menu)");
-			input = Scanner.getLine();
+			input = scanner.nextLine();
 			input = input.replaceAll("$", "");
 			input = input.replaceAll("-", "");
 			try {
@@ -124,9 +136,10 @@ public class Session {
 				System.out.println("Please enter a monetary value.\n");
 				continue;
 			}
+			
+			tranService.addNewTransaction("deposit", customer.getBalance(), (customer.getBalance()+deposit), customer);
 			service.updateCustomerBalance(customer, customer.getBalance()+deposit);
-			Transactions = new Transactions(customer, "Deposit", customer.getBalance()+deposit);
-			tranService.addNewTransaction(newTransaction);
+			customer.setBalance(customer.getBalance()+deposit);
 			
 			System.out.println("Your deposit has been processed.");
 		}
@@ -141,7 +154,7 @@ public class Session {
 			System.out.println("Your current balance is $"+customer.getBalance());
 			System.out.println("How much would you like to deposit?");
 			System.out.println("(Type 'back' to go the main menu)");
-			input = Scanner.getLine();
+			input = scanner.nextLine();
 			input = input.replaceAll("$", "");
 			input = input.replaceAll("-", "");
 			try {
@@ -154,22 +167,24 @@ public class Session {
 				System.out.println("Please be reasonable. You don't have that much!");
 				continue;
 			}
-			updateCustomerBalance(customer, customer.getBalance()-deposit);
-			addNewTransaction(customer, "Deposit", customer.getBalance()-deposit);
-			System.out.println("Your withdrawl has been processed.");
+			tranService.addNewTransaction("withdraw", customer.getBalance(), (customer.getBalance()-deposit), customer);
+			service.updateCustomerBalance(customer, customer.getBalance()-deposit);
+			customer.setBalance(customer.getBalance()-deposit);
+			
+			System.out.println("Your withdraw has been processed.");
 		}
 		System.out.println("\n\n");
 		//automatically returns to the mainMenu()
 	}
 	
 	void viewTransactions(Customer customer) {
-		Set<Transactions> transactions = getTransactionsForCustomer(customer);
+		Set<Transactions> transactions = tranService.getTransactionsForCustomer(customer);
 		System.out.println("-----TRANSACTIONS-------");
 		for(Transactions transaction: transactions) {
 			System.out.println(transaction.toString());
 		}
 		System.out.println("Press enter to go back.");
-		Scanner.getLine();
+		scanner.nextLine();
 		System.out.println("\n\n");
 		//automatically returns to the mainMenu()
 	}

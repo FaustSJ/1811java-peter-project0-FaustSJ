@@ -24,17 +24,16 @@ public class CustomerDaoJdbc implements CustomerDao {
 		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex = 0;
 
-			String sql = "(INSERT INTO CUSTOMER VALUES(?,?,?,?,?,?))";
+			String sql = "(INSERT INTO CUSTOMER VALUES(?,?,?,?,?))";
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
 			
 			// these fill out the '?'(interrogation signs) above in order
-			statement.setLong(++parameterIndex, customer.getId());
 			statement.setString(++parameterIndex, customer.getUsername());
 			statement.setString(++parameterIndex, customer.getPassword());
-			statement.setDouble(++parameterIndex, customer.getBalance());
 			statement.setString(++parameterIndex, customer.getFirstName());
 			statement.setString(++parameterIndex, customer.getLastName());
+			statement.setDouble(++parameterIndex, customer.getBalance());
 
 			//executeUpdate returns the num of rows affected
 			if(statement.executeUpdate() > 0) {
@@ -66,12 +65,11 @@ public class CustomerDaoJdbc implements CustomerDao {
 				//try result.get and look at all you have access to for that row
 				//use ctrl+space to see what parameters are needed
 				return new Customer(
-						result.getLong("C_ID"),
 						result.getString("C_USERNAME"),
 						result.getString("C_PASSWORD"),
-						result.getDouble("C_BALANCE"),
 						result.getString("C_FIRSTNAME"),
-						result.getString("C_LASTNAME")
+						result.getString("C_LASTNAME"),
+						result.getDouble("C_BALANCE")
 						);
 			}
 			
@@ -85,12 +83,12 @@ public class CustomerDaoJdbc implements CustomerDao {
 	public boolean modifyCustomerBalance(Customer customer, double balance) {
 		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex = 0;
-			String sql = "(UPDATE CUSTOMER SET C_BALANCE = ? WHERE C_ID = ?)";
+			String sql = "(UPDATE CUSTOMER SET C_BALANCE = ? WHERE C_USERNAME = ?)";
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
 			//replaces '?'
 			statement.setDouble(++parameterIndex, balance);
-			statement.setLong(++parameterIndex, customer.getId());
+			statement.setString(++parameterIndex, customer.getUsername());
 			
 			//executeUpdate returns the num of rows affected
 			if(statement.executeUpdate() > 0) {

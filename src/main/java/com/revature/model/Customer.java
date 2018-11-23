@@ -1,17 +1,13 @@
 package com.revature.model;
 /*
- *     C_ID NUMBER(10,0),
-    C_USERNAME VARCHAR2(40),
+ *  C_USERNAME VARCHAR2(40),
     C_PASSWORD VARCHAR2(40),
+    C_FIRSTNAME VARCHAR(40),
+    C_LASTNAME VARCHAR(40),
     C_BALANCE NUMBER(8,2),
-    CONSTRAINT PK_CUSTOMER PRIMARY KEY (C_ID)
+    CONSTRAINT PK_CUSTOMER PRIMARY KEY (C_USERNAME)
  */
 public class Customer {
-	/**
-	 * C_ID
-	 * always add as null to toggle auto-increment
-	 */
-	private long id;
 	/**
 	 * C_USERNAME
 	 */
@@ -21,10 +17,6 @@ public class Customer {
 	 */
 	private String password;
 	/**
-	 * C_BALANCE
-	 */
-	private double balance;
-	/**
 	 * C_FIRSTNAME
 	 */
 	private String firstName;
@@ -32,14 +24,18 @@ public class Customer {
 	 * C_LASTNAME
 	 */
 	private String lastName;
+	/**
+	 * C_BALANCE
+	 */
+	private double balance;
+	
 	
 	/* Constructors */
 	
 	public Customer() { }
 
-	public Customer(long id, String username, String password, double balance, String firstName, String lastName) {
+	public Customer(String username, String password, String firstName, String lastName, double balance) {
 		super();
-		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.balance = balance;
@@ -48,14 +44,6 @@ public class Customer {
 	}
 
 	/* Getters and Setters */
-	
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
 
 	public String getUsername() {
 		return username;
