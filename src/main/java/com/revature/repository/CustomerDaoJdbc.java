@@ -22,21 +22,22 @@ public class CustomerDaoJdbc implements CustomerDao {
 	@Override
 	public boolean insert(Customer customer) {
 		try(Connection connection = ConnectionUtil.getConnection()){
-			int parameterIndex = 0;
 
-			String sql = "(INSERT INTO CUSTOMER VALUES(?,?,?,?,?))";
+			int parameterIndex = 0;
+//Customer(("test"+(++customerCount)), "pass", "first", "last", 0.00);
+			String sql = "INSERT INTO CUSTOMER VALUES(?,?,?,?,?)";
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
-			
+
 			// these fill out the '?'(interrogation signs) above in order
 			statement.setString(++parameterIndex, customer.getUsername());
 			statement.setString(++parameterIndex, customer.getPassword());
 			statement.setString(++parameterIndex, customer.getFirstName());
 			statement.setString(++parameterIndex, customer.getLastName());
 			statement.setDouble(++parameterIndex, customer.getBalance());
-
+			
 			//executeUpdate returns the num of rows affected
-			if(statement.executeUpdate() > 0) {
+			if(statement.executeUpdate()==1) {
 				return true;
 			}
 			
@@ -50,7 +51,7 @@ public class CustomerDaoJdbc implements CustomerDao {
 	public Customer findByUserNameAndPassword(String username, String password) {
 		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex = 0;
-			String sql = "(SELECT * FROM CUSTOMER WHERE C_USERNAME = ? AND C_PASSWORD = ?)";
+			String sql = "SELECT * FROM CUSTOMER WHERE C_USERNAME = ? AND C_PASSWORD = ?";
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
 			//replaces '?'
@@ -105,7 +106,7 @@ public class CustomerDaoJdbc implements CustomerDao {
 	public boolean isUsernameTaken(String username) {
 		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex = 0;
-			String sql = "(SELECT * FROM CUSTOMER WHERE C_USERNAME = ?)";
+			String sql = "SELECT * FROM CUSTOMER WHERE C_USERNAME = ?";
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
 			//replaces '?'
@@ -113,9 +114,8 @@ public class CustomerDaoJdbc implements CustomerDao {
 
 			//instead of executUpdate, we do executeQuery
 			ResultSet result = statement.executeQuery();
-			
 			//if there is one record. there's no hasNext(). next() stands on the first row.
-			if(result.getFetchSize()>0) {
+			if(result.next()) {
 				//try result.get and look at all you have access to for that row
 				//use ctrl+space to see what parameters are needed
 				return true;

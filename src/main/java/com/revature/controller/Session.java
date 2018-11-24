@@ -1,8 +1,13 @@
 package com.revature.controller;
 
+import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Set;
 
+import org.apache.log4j.Logger;
+
+import com.revature.exception.InvalidLoginCredentialsException;
+import com.revature.exception.OverdraftException;
+import com.revature.exception.UsernameIsAlreadyTakenException;
 import com.revature.model.Customer;
 import com.revature.model.Transactions;
 import com.revature.service.CustomerService;
@@ -12,14 +17,25 @@ import com.revature.service.TransactionsServiceImpl;
 
 public class Session {
 
+	private static final Logger LOGGER = Logger.getLogger(Session.class);
+	
 	private CustomerService service = new CustomerServiceImpl();
 	private TransactionsService tranService = new TransactionsServiceImpl();
 	private Scanner scanner;
+	private Customer loginCustomer;
 	
 	public Session() {
-		this.scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
+		loginCustomer = null;
 	}
 	
+	/*
+	 * Displays the Welcome Screen, where the user can select to go either to the Login Screen
+	 * 	or to the Registration Screen. Or they can Quit the program.
+	 * 
+	 * Leaving the Registration Screen or Login Screen will bring the user back here.
+	 * Logging out will also bring the user back here.
+	 */
 	public void welcomeScreen(){
 		String input = "0";
 		
@@ -32,70 +48,127 @@ public class Session {
 			input = input.trim();
 			
 			if(input.equals("1")) {
-				System.out.println("\n\n");
+				System.out.println("\n");
 				register();
 			}
 			if(input.equals("2")) {
-				System.out.println("\n\n");
-				login();
+				System.out.println("\n");
+				getLogin();
 			}
 		}
 		
 		scanner.close();
 	}
 	
-	
+	/*
+	 * Displays the Register Screen,
+	 * 	where the user can register their own username and password
+	 * 
+	 * The user comes here from the Welcome Screen.
+	 * 
+	 * Completing registration or typing 'q' will return the user to the Welcome Screen.
+	 */
 	public void register() {
+		System.out.println("Register Here!");
+		System.out.println("(Enter 'q' to return to the Welcome Screen)");
 		System.out.print("First name: ");
 		String firstName = scanner.nextLine();
+		if(firstName.equals("q")) {
+			System.out.println("\n");
+			return;
+		}
+		
 		System.out.print("Last name: ");
 		String lastName = scanner.nextLine();
+		if(lastName.equals("q")) {
+			System.out.println("\n");
+			return;
+		}
+		
 		String username = "";
 		boolean usernameIsTaken = true;
 		while(usernameIsTaken) {
 			System.out.print("Username: ");
 			username = scanner.nextLine();
-			usernameIsTaken = service.checkIfUsernameIsTaken(username);
-			if(usernameIsTaken) {
+			if(username.equals("q")) {
+				System.out.println("\n");
+				return;
+			}
+			try {
+				usernameIsTaken = service.checkIfUsernameIsTaken(username);
+			} catch (UsernameIsAlreadyTakenException e) {
 				System.out.println("That username is taken!");
 				System.out.println("Try another one.");
-		}	}
+			}
+				
+		}
 		System.out.print("Password: ");
 		String password = scanner.nextLine();
+		if(password.equals("q")) {
+			System.out.println("\n");
+			return;
+		}
 		
 		Customer newCustomer = new Customer(username, password, firstName, lastName, 0.00);
 		service.registerNewCustomer(newCustomer);
 		System.out.println("You have been added!");
-		System.out.println("\n\n");
+		System.out.println("\n");
 		welcomeScreen();
 	}
+
+	/*
+	 * Displays the Login Screen, where the user can log in to their account.
+	 * 
+	 * The user comes here from the Welcome Screen.
+	 * 
+	 * Completing login will send the user to the Main Menu.
+	 * The user can return to the Welcome Screen by inputting 'q'.
+	 */
 	
-	public void login() {
+	public void getLogin() {
 		String username = "";
 		String password = "";
-		Customer customer = null;
+		System.out.println("Log In Here!");
+		System.out.println("(Enter 'q' to return to the Welcome Screen)");
 		boolean notValidLogin = true;
 		while(notValidLogin) {
 			System.out.print("Username: ");
 			username = scanner.nextLine();
+			if(username.equals("q")) {
+				System.out.println("\n");
+				return;
+			}
 			System.out.print("Password: ");
 			password = scanner.nextLine();
-			customer = service.getCustomerByUsernameAndPassword(username, password);
-			if(customer != null) {
+			if(password.equals("q")) {
+				System.out.println("\n");
+				return;
+			}
+			
+			try {
+				loginCustomer = service.getCustomerByUsernameAndPassword(username, password);
 				notValidLogin = false;
-			} else {
+			} catch (InvalidLoginCredentialsException e) {
 				System.out.println("Invalid login. Try again.");
 			}
 		}
 		System.out.println("\n\n");
-		mainMenu(customer);
+		mainMenu();
 	}
 	
-	void mainMenu(Customer customer) {
+	/*
+	 * Displays the Main Menu.
+	 * 
+	 * Users are initially sent here from the Login Screen.
+	 * They are sent back here after depositing, withdrawing, or viewing transactions.
+	 * 
+	 * Entering '4' will take the user back to the Welcome Screen.
+	 */
+	public void mainMenu() {
 		String input = "";
 		while(!input.equals("4")) {
-			System.out.println("Hello "+customer.getFirstName()+"!");
-			System.out.println("Your current balance is $"+customer.getBalance());
+			System.out.println("Hello "+loginCustomer.getFirstName()+"!");
+			System.out.println("Your current balance is $"+loginCustomer.getBalance());
 			System.out.println("1) Deposit");
 			System.out.println("2) Withdraw");
 			System.out.println("3) View Transactions");
@@ -103,14 +176,14 @@ public class Session {
 			input = scanner.nextLine();
 			
 			if(input.equals("1")) {
-				System.out.println("\n\n");
-				deposit(customer);
+				System.out.println("\n");
+				deposit();
 			}else if(input.equals("2")) {
-				System.out.println("\n\n");
-				withdraw(customer);
+				System.out.println("\n");
+				withdraw();
 			}else if(input.equals("3")) {
-				System.out.println("\n\n");
-				viewTransactions(customer);
+				System.out.println("\n");
+				viewTransactions();
 			}else if(!input.equals("4")) {
 				System.out.println("Sorry, I didn't get that.\n");
 			}
@@ -120,14 +193,25 @@ public class Session {
 		welcomeScreen();
 	}
 	
-	void deposit(Customer customer) {
+	/*
+	 * The Deposit Screen.
+	 * 
+	 * The user comes here from the Main Menu.
+	 * 
+	 * The user will stay on this screen until they input 'q',
+	 * 	which will return them to the Main Menu.
+	 */
+	public void deposit() {
 		String input = "";
 		double deposit = 0.0;
-		while(input.equals("back")) {
-			System.out.println("Your current balance is $"+customer.getBalance());
+		while(input.equals("q")) {
+			System.out.println("Your current balance is $"+loginCustomer.getBalance());
 			System.out.println("How much would you like to deposit?");
-			System.out.println("(Type 'back' to go the main menu)");
+			System.out.println("(Enter 'q' to return to the Main Menu)");
 			input = scanner.nextLine();
+			if(input.equals("q")) {
+				continue;
+			}
 			input = input.replaceAll("$", "");
 			input = input.replaceAll("-", "");
 			try {
@@ -137,55 +221,79 @@ public class Session {
 				continue;
 			}
 			
-			tranService.addNewTransaction("deposit", customer.getBalance(), (customer.getBalance()+deposit), customer);
-			service.updateCustomerBalance(customer, customer.getBalance()+deposit);
-			customer.setBalance(customer.getBalance()+deposit);
+			tranService.addNewTransaction("deposit", loginCustomer.getBalance(), (loginCustomer.getBalance()+deposit), loginCustomer);
+			service.updateCustomerBalance(loginCustomer, loginCustomer.getBalance()+deposit);
+			loginCustomer.setBalance(loginCustomer.getBalance()+deposit);
 			
 			System.out.println("Your deposit has been processed.");
 		}
-		System.out.println("\n\n");
+		System.out.println("\n");
 		//automatically returns to the mainMenu()
 	}
 	
-	void withdraw(Customer customer) {
+	/*
+	 * The Withdraw Screen.
+	 * 
+	 * The user comes here from the Main Menu.
+	 * 
+	 * The user will stay on this screen until they input 'q',
+	 * 	which will return them to the Main Menu.
+	 */
+	public void withdraw() {
 		String input = "";
-		double deposit = 0.0;
-		while(input.equals("back")) {
-			System.out.println("Your current balance is $"+customer.getBalance());
-			System.out.println("How much would you like to deposit?");
-			System.out.println("(Type 'back' to go the main menu)");
+		double withdraw = 0.0;
+		while(input.equals("q")) {
+			System.out.println("Your current balance is $"+loginCustomer.getBalance());
+			System.out.println("How much would you like to withdraw?");
+			System.out.println("(Enter 'q' to return to the Main Menu)");
 			input = scanner.nextLine();
+			if(input.equals("q")) {
+				continue;
+			}
 			input = input.replaceAll("$", "");
 			input = input.replaceAll("-", "");
 			try {
-				deposit = Double.parseDouble(input);
+				withdraw = Double.parseDouble(input);
 			} catch(Exception e) {
 				System.out.println("Please enter a monetary value.\n");
 				continue;
 			}
-			if(deposit>customer.getBalance()) {
+			try {
+				tranService.addNewTransaction("withdraw", loginCustomer.getBalance(), (loginCustomer.getBalance()-withdraw), loginCustomer);
+			} catch (OverdraftException e) {
 				System.out.println("Please be reasonable. You don't have that much!");
 				continue;
 			}
-			tranService.addNewTransaction("withdraw", customer.getBalance(), (customer.getBalance()-deposit), customer);
-			service.updateCustomerBalance(customer, customer.getBalance()-deposit);
-			customer.setBalance(customer.getBalance()-deposit);
+			service.updateCustomerBalance(loginCustomer, loginCustomer.getBalance()-withdraw);
+			loginCustomer.setBalance(loginCustomer.getBalance()-withdraw);
 			
 			System.out.println("Your withdraw has been processed.");
 		}
-		System.out.println("\n\n");
+		System.out.println("\n");
 		//automatically returns to the mainMenu()
 	}
 	
-	void viewTransactions(Customer customer) {
-		Set<Transactions> transactions = tranService.getTransactionsForCustomer(customer);
+	/*
+	 * Displays a list of transaction that apply to the user.
+	 * 
+	 * Users are brought here from the Main Menu.
+	 * 
+	 * Pressing 'Enter' will return the user to the Main Menu.
+	 */
+	public void viewTransactions() {
+		ArrayList<Transactions> transactions = tranService.getTransactionsForCustomer(loginCustomer);
 		System.out.println("-----TRANSACTIONS-------");
+		if(transactions.isEmpty()) {
+			System.out.println("It appears you haven't made any transactions since your account's creation.");
+			System.out.println("To make a transaction, simply select 'Deposit' or 'Withdraw' from the Main Menu.\n");
+			return;
+		}
 		for(Transactions transaction: transactions) {
 			System.out.println(transaction.toString());
 		}
-		System.out.println("Press enter to go back.");
+		System.out.println("Press enter to return to the Main Menu.");
 		scanner.nextLine();
-		System.out.println("\n\n");
+		System.out.println("\n");
 		//automatically returns to the mainMenu()
 	}
 	

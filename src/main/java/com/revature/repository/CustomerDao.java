@@ -1,5 +1,6 @@
 package com.revature.repository;
 
+import com.revature.exception.UsernameIsAlreadyTakenException;
 import com.revature.model.Customer;
 
 /**

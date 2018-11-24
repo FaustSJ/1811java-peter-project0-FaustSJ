@@ -4,8 +4,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
+import java.text.SimpleDateFormat;
 
 import org.apache.log4j.Logger;
 
@@ -31,14 +34,13 @@ public class TransactionDaoJdbc implements TransactionDao {
 			//String sql = "INSERT INTO ANIMAL VALUES("+sub+",?,?,NULL,?,?,NULL)";
 			
 			//the newly added trigger auto-increments the ID
-			String sql = "(INSERT INTO TRANSACTIONS VALUES(?, CURRENT_TIMESTAMP,?,?,?,?))";
+			String sql = "INSERT INTO TRANSACTIONS VALUES(?, CURRENT_TIMESTAMP,?,?,?,?)";
 //Timestamp timestamp = new TimeStamp(System.surrentTimeMilis);
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
 			
 			// these fill out the '?'(interrogation signs) above in order
 			statement.setLong(++parameterIndex, this.generateNextTransactionIDNumber());
-			statement.setString(++parameterIndex, "");
 			statement.setString(++parameterIndex, transactionType);
 			statement.setDouble(++parameterIndex, originalBalance);
 			statement.setDouble(++parameterIndex, newBalance);
@@ -50,16 +52,16 @@ public class TransactionDaoJdbc implements TransactionDao {
 			}
 			
 		}catch (SQLException e) {
-			LOGGER.error("Error inserting animal: ", e);
+			LOGGER.error("Error inserting new transaction: ", e);
 		}
 		return false;
 	}
 
 	@Override
-	public Set<Transactions> getTransactionsForCustomer(Customer customer) {
+	public ArrayList<Transactions> getTransactionsForCustomer(Customer customer) {
 		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex = 0;
-			String sql = "(SELECT * FROM TRANSACTIONS WHERE C_USERNAME = ?)";
+			String sql = "SELECT * FROM TRANSACTIONS WHERE C_USERNAME = ?";
 			
 			//we don't need a prepared one since there's no input
 			PreparedStatement statement = connection.prepareStatement(sql); //a child of preparedStatement
@@ -68,13 +70,13 @@ public class TransactionDaoJdbc implements TransactionDao {
 			ResultSet result = statement.executeQuery();
 			
 			//if there is one record. there's no hasNext(). next() stands on the first row.
-			Set<Transactions> transactions = new TreeSet<>();
+			ArrayList<Transactions> transactions = new ArrayList<>();
 			while(result.next()) {
 				//try result.get and look at all you have access to for that row
 				//use ctrl+space to see what parameters are needed
 				transactions.add(new Transactions(
 						result.getLong("T_ID"),
-						result.getString("T_STAMP"),
+						(new SimpleDateFormat("MM/dd/yyyy HH:mm").format(result.getTimestamp("T_STAMP"))),
 						result.getString("T_TRANSACTION_TYPE"),
 						result.getDouble("T_ORIGINAL_BALANCE"),
 						result.getDouble("T_UPDATED_BALANCE"),
@@ -83,7 +85,7 @@ public class TransactionDaoJdbc implements TransactionDao {
 			}
 			return transactions;
 		}catch (SQLException e) {
-			LOGGER.error("Error inserting animal: ", e);
+			LOGGER.error("Error getting transactions for customer: ", e);
 		}
 		return null;
 	}

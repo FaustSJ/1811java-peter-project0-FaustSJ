@@ -85,4 +85,10 @@ public class Customer {
 		this.lastName = lastName;
 	}
 	
+	/* String Representation */
+	
+	public String toString() {
+		return (firstName + " " + lastName);
+	}
+	
 }

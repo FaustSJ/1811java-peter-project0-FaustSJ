@@ -1,5 +1,7 @@
 package com.revature.service;
 
+import com.revature.exception.InvalidLoginCredentialsException;
+import com.revature.exception.UsernameIsAlreadyTakenException;
 import com.revature.model.Customer;
 import com.revature.repository.CustomerDao;
 import com.revature.repository.CustomerDaoJdbc;
@@ -19,7 +21,11 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public Customer getCustomerByUsernameAndPassword(String username, String password) {
-		return dao.findByUserNameAndPassword(username, password);
+		Customer customer = dao.findByUserNameAndPassword(username, password);
+		if(customer==null) {
+			throw new InvalidLoginCredentialsException();
+		}
+		return customer;
 	}
 
 	@Override
@@ -29,7 +35,10 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public boolean checkIfUsernameIsTaken(String username) {
-		return dao.isUsernameTaken(username);
+		if(dao.isUsernameTaken(username)) {
+			throw new UsernameIsAlreadyTakenException();
+		}
+		return false;
 	}
 
 }

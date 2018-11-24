@@ -1,0 +1,2039 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 21:00:48 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.TransactionDaoJdbc category">com.revature.repository.TransactionDaoJdbc</td>
+<td>TransactionDaoJdbc.java:55</td>
+<td title="Message">Error inserting animal: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.TransactionDaoJdbc.insert(TransactionDaoJdbc.java:29)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.TransactionsServiceImpl.addNewTransaction(TransactionsServiceImpl.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.TransactionsServiceTest.addNewTransaction(TransactionsServiceTest.java:36)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>60</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.TransactionDaoJdbc category">com.revature.repository.TransactionDaoJdbc</td>
+<td>TransactionDaoJdbc.java:88</td>
+<td title="Message">Error inserting animal: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.TransactionDaoJdbc.getTransactionsForCustomer(TransactionDaoJdbc.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.TransactionsServiceImpl.getTransactionsForCustomer(TransactionsServiceImpl.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.TransactionsServiceTest.getTransactionsForCustomer(TransactionsServiceTest.java:46)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 21:06:43 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.getCustomerByUsernameAndPassword(CustomerServiceTest.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>43</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.invalidLoginInSession(CustomerServiceTest.java:65)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>54</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsntTaken(CustomerServiceTest.java:55)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>71</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:45</td>
+<td title="Message">Error inserting customer: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.insert(CustomerDaoJdbc.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.registerNewCustomer(CustomerServiceImpl.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.registerNewCustomer(CustomerServiceTest.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>78</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsTaken(CustomerServiceTest.java:60)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 21:17:23 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.getCustomerByUsernameAndPassword(CustomerServiceTest.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>47</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.invalidLoginInSession(CustomerServiceTest.java:65)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>62</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsntTaken(CustomerServiceTest.java:55)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>79</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:45</td>
+<td title="Message">Error inserting customer: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.insert(CustomerDaoJdbc.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.registerNewCustomer(CustomerServiceImpl.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.registerNewCustomer(CustomerServiceTest.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>82</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsTaken(CustomerServiceTest.java:60)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 21:19:57 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.getCustomerByUsernameAndPassword(CustomerServiceTest.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>47</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.invalidLoginInSession(CustomerServiceTest.java:65)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>59</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsntTaken(CustomerServiceTest.java:55)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>75</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:45</td>
+<td title="Message">Error inserting customer: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.insert(CustomerDaoJdbc.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.registerNewCustomer(CustomerServiceImpl.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.registerNewCustomer(CustomerServiceTest.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>83</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsTaken(CustomerServiceTest.java:60)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 21:22:31 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>6</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.getCustomerByUsernameAndPassword(CustomerServiceTest.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>34</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.invalidLoginInSession(CustomerServiceTest.java:65)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>44</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsntTaken(CustomerServiceTest.java:55)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>69</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:45</td>
+<td title="Message">Error inserting customer: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.insert(CustomerDaoJdbc.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.registerNewCustomer(CustomerServiceImpl.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.registerNewCustomer(CustomerServiceTest.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>72</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:13)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsTaken(CustomerServiceTest.java:60)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 21:28:58 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.getCustomerByUsernameAndPassword(CustomerServiceTest.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>43</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.invalidLoginInSession(CustomerServiceTest.java:65)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>55</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsntTaken(CustomerServiceTest.java:55)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>72</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:45</td>
+<td title="Message">Error inserting customer: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.insert(CustomerDaoJdbc.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.registerNewCustomer(CustomerServiceImpl.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.registerNewCustomer(CustomerServiceTest.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>74</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsTaken(CustomerServiceTest.java:60)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 21:29:43 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.getCustomerByUsernameAndPassword(CustomerServiceTest.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>45</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:78</td>
+<td title="Message">Error finding customer with username and password: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.findByUserNameAndPassword(CustomerDaoJdbc.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.getCustomerByUsernameAndPassword(CustomerServiceImpl.java:24)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.invalidLoginInSession(CustomerServiceTest.java:65)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>52</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsntTaken(CustomerServiceTest.java:55)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>65</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:45</td>
+<td title="Message">Error inserting customer: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.insert(CustomerDaoJdbc.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.registerNewCustomer(CustomerServiceImpl.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.registerNewCustomer(CustomerServiceTest.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+
+<tr>
+<td>70</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: No suitable driver found for jdbc:oracle:thin:@this-db-instance-is-fly.cqo7p2gsckmz.us-east-1.rds.amazonaws.com:1521:ORCL
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:14)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsTaken(CustomerServiceTest.java:60)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 21:37:44 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:45</td>
+<td title="Message">Error inserting customer: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00928: missing SELECT keyword
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.insert(CustomerDaoJdbc.java:40)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.registerNewCustomer(CustomerServiceImpl.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.registerNewCustomer(CustomerServiceTest.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 22:02:43 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:126</td>
+<td title="Message">Error finding customer with username: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid operation for forward only resultset : first
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.first(InsensitiveScrollableResultSet.java:534)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.isUsernameTaken(CustomerDaoJdbc.java:119)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.checkIfUsernameIsTaken(CustomerServiceImpl.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.pickedUsernameIsntTaken(CustomerServiceTest.java:55)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 22:07:59 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:45</td>
+<td title="Message">Error inserting customer: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (BANKER.PK_CUSTOMER) violated
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.insert(CustomerDaoJdbc.java:40)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.registerNewCustomer(CustomerServiceImpl.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.registerNewCustomer(CustomerServiceTest.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 22:34:11 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.CustomerDaoJdbc category">com.revature.repository.CustomerDaoJdbc</td>
+<td>CustomerDaoJdbc.java:48</td>
+<td title="Message">Error inserting customer: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (BANKER.PK_CUSTOMER) violated
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.CustomerDaoJdbc.insert(CustomerDaoJdbc.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.CustomerServiceImpl.registerNewCustomer(CustomerServiceImpl.java:19)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.CustomerServiceTest.registerNewCustomer(CustomerServiceTest.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 22:45:00 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.TransactionDaoJdbc category">com.revature.repository.TransactionDaoJdbc</td>
+<td>TransactionDaoJdbc.java:55</td>
+<td title="Message">Error inserting new transaction: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column index
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.TransactionDaoJdbc.insert(TransactionDaoJdbc.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.TransactionsServiceImpl.addNewTransaction(TransactionsServiceImpl.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.TransactionsServiceTest.addNewTransaction(TransactionsServiceTest.java:35)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 22:51:50 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.TransactionDaoJdbc category">com.revature.repository.TransactionDaoJdbc</td>
+<td>TransactionDaoJdbc.java:54</td>
+<td title="Message">Error inserting new transaction: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00928: missing SELECT keyword
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.TransactionDaoJdbc.insert(TransactionDaoJdbc.java:49)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.TransactionsServiceImpl.addNewTransaction(TransactionsServiceImpl.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.TransactionsServiceTest.addNewTransaction(TransactionsServiceTest.java:36)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Nov 23 22:53:32 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.TransactionDaoJdbc category">com.revature.repository.TransactionDaoJdbc</td>
+<td>TransactionDaoJdbc.java:54</td>
+<td title="Message">Error inserting new transaction: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00928: missing SELECT keyword
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.TransactionDaoJdbc.insert(TransactionDaoJdbc.java:49)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.TransactionsServiceImpl.addNewTransaction(TransactionsServiceImpl.java:25)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.test.TransactionsServiceTest.addNewTransaction(TransactionsServiceTest.java:36)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Method.java:498)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+</td></tr>

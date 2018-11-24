@@ -1,5 +1,7 @@
 package com.revature.service;
 
+import com.revature.exception.UsernameIsAlreadyTakenException;
+import com.revature.exception.InvalidLoginCredentialsException;
 import com.revature.model.Customer;
 
 public interface CustomerService {
