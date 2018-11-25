@@ -15,17 +15,6 @@ import com.revature.model.Customer;
 import com.revature.service.CustomerService;
 import com.revature.service.CustomerServiceImpl;
 
-/*
- * ctrl+shift+o
- * to clean up imports
- * 
- * ctrl+space
- * to auto-complete for main(), sysout
- * 
- * ctrl+shift+numPad/ (num pad back-slash)
- * to collapse code blocks
- */
-
 public class CustomerServiceTest {
 	private static final Logger LOGGER = Logger.getLogger(CustomerServiceTest.class);
 	

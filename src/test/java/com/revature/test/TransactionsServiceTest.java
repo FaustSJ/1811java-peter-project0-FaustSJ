@@ -13,10 +13,6 @@ import com.revature.model.Customer;
 import com.revature.service.TransactionsService;
 import com.revature.service.TransactionsServiceImpl;
 
-/*
- * one sequence per table
- * one trigger per table
- */
 
 public class TransactionsServiceTest {
 	private static final Logger LOGGER = Logger.getLogger(CustomerServiceTest.class);
@@ -26,7 +22,6 @@ public class TransactionsServiceTest {
 	
 	@Before
 	public void setUp() {
-		//mockCustomer = new Customer("transTest", "pass", "first", "last", 0.00);
 		mockCustomer = new Customer("user1", "pass1", "first1", "last1", 0.00);
 		service = new TransactionsServiceImpl();
 	}

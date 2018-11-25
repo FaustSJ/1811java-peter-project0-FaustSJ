@@ -1,12 +1,5 @@
 package com.revature.model;
-/*
- *  C_USERNAME VARCHAR2(40),
-    C_PASSWORD VARCHAR2(40),
-    C_FIRSTNAME VARCHAR(40),
-    C_LASTNAME VARCHAR(40),
-    C_BALANCE NUMBER(8,2),
-    CONSTRAINT PK_CUSTOMER PRIMARY KEY (C_USERNAME)
- */
+
 public class Customer {
 	/**
 	 * C_USERNAME

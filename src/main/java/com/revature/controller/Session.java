@@ -38,7 +38,7 @@ public class Session {
 	 */
 	public void welcomeScreen(){
 		String input = "0";
-		
+
 		while(!input.equals("3")){
 			System.out.println("WELCOME");
 			System.out.println("1) Register");
@@ -51,13 +51,15 @@ public class Session {
 				System.out.println("\n");
 				register();
 			}
+			
 			if(input.equals("2")) {
 				System.out.println("\n");
 				getLogin();
 			}
 		}
-		
 		scanner.close();
+		System.out.println("GOODBYE");
+		//exits the program
 	}
 	
 	/*
@@ -113,7 +115,7 @@ public class Session {
 		service.registerNewCustomer(newCustomer);
 		System.out.println("You have been added!");
 		System.out.println("\n");
-		welcomeScreen();
+		//automatically returns to the Welcome Screen
 	}
 
 	/*
@@ -142,6 +144,7 @@ public class Session {
 			password = scanner.nextLine();
 			if(password.equals("q")) {
 				System.out.println("\n");
+				//returns to the Welcome Screen
 				return;
 			}
 			
@@ -168,7 +171,7 @@ public class Session {
 		String input = "";
 		while(!input.equals("4")) {
 			System.out.println("Hello "+loginCustomer.getFirstName()+"!");
-			System.out.println("Your current balance is $"+loginCustomer.getBalance());
+			System.out.println(String.format("Your current balance is $%.2f",loginCustomer.getBalance()));
 			System.out.println("1) Deposit");
 			System.out.println("2) Withdraw");
 			System.out.println("3) View Transactions");
@@ -189,8 +192,8 @@ public class Session {
 			}
 		}
 		//logging out
-		System.out.println("Come again!");
-		welcomeScreen();
+		System.out.println("Come again!\n");
+		//automatically returns to Welcome Screen
 	}
 	
 	/*
@@ -204,8 +207,8 @@ public class Session {
 	public void deposit() {
 		String input = "";
 		double deposit = 0.0;
-		while(input.equals("q")) {
-			System.out.println("Your current balance is $"+loginCustomer.getBalance());
+		while(!input.equals("q")) {
+			System.out.println(String.format("Your current balance is $%.2f",loginCustomer.getBalance()));
 			System.out.println("How much would you like to deposit?");
 			System.out.println("(Enter 'q' to return to the Main Menu)");
 			input = scanner.nextLine();
@@ -242,8 +245,8 @@ public class Session {
 	public void withdraw() {
 		String input = "";
 		double withdraw = 0.0;
-		while(input.equals("q")) {
-			System.out.println("Your current balance is $"+loginCustomer.getBalance());
+		while(!input.equals("q")) {
+			System.out.println(String.format("Your current balance is $%.2f",loginCustomer.getBalance()));
 			System.out.println("How much would you like to withdraw?");
 			System.out.println("(Enter 'q' to return to the Main Menu)");
 			input = scanner.nextLine();
@@ -282,14 +285,16 @@ public class Session {
 	 */
 	public void viewTransactions() {
 		ArrayList<Transactions> transactions = tranService.getTransactionsForCustomer(loginCustomer);
-		System.out.println("-----TRANSACTIONS-------");
+		System.out.println(String.format(" %-18s | %-18s | %-18s | %-18s ", "Transaction Date", "Transaction Type", "Original Balance", "Updated Balance"));
+		System.out.println("-------------------------------------------------------------------------------");
 		if(transactions.isEmpty()) {
 			System.out.println("It appears you haven't made any transactions since your account's creation.");
 			System.out.println("To make a transaction, simply select 'Deposit' or 'Withdraw' from the Main Menu.\n");
 			return;
-		}
-		for(Transactions transaction: transactions) {
-			System.out.println(transaction.toString());
+		} else {
+			for(Transactions transaction: transactions) {
+				System.out.println(transaction.toString());
+			}
 		}
 		System.out.println("Press enter to return to the Main Menu.");
 		scanner.nextLine();

@@ -1,12 +1,5 @@
 package com.revature.model;
-//T_ID NUMBER(10,0),
-//T_STAMP TIMESTAMP,
-//T_TRANSACTION_TYPE VARCHAR(10),
-//T_ORIGINAL_BALANCE NUMBER(8,2),
-//T_UPDATED_BALANCE NUMBER(8,2),
-//C_USERNAME VARCHAR2(40),
-//CONSTRAINT PK_TRANSACTIONS PRIMARY KEY (T_ID),
-//CONSTRAINT FK_CUSTOMER FOREIGN KEY (C_USERNAME) REFERENCES CUSTOMER (C_USERNAME)
+
 public class Transactions {
 	/**
 	 * T_ID
@@ -37,7 +30,11 @@ public class Transactions {
 	
 	public Transactions() { }
 	
-	public Transactions(long id, String stamp, String transactionType, double originalBalance, double updatedBalance,
+	public Transactions(long id, 
+			String stamp, 
+			String transactionType, 
+			double originalBalance, 
+			double updatedBalance,
 			Customer customer) {
 		super();
 		this.id = id;
@@ -101,8 +98,8 @@ public class Transactions {
 	/* String Representation */
 	
 	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
+		//https://dzone.com/articles/java-string-format-examples
+		return String.format(" %-18s | %-18s | %-18.2f | %-18.2f ", stamp, transactionType, originalBalance, updatedBalance);
 	}
 	
 	

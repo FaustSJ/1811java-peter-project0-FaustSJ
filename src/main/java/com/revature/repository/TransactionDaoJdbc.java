@@ -92,7 +92,7 @@ public class TransactionDaoJdbc implements TransactionDao {
 	
 	private long generateNextTransactionIDNumber() {
 		try(Connection connection = ConnectionUtil.getConnection()){
-			String sql = "(SELECT MAX(T_ID) FROM TRANSACTIONS)";
+			String sql = "SELECT MAX(T_ID) FROM TRANSACTIONS";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			
 			ResultSet result = statement.executeQuery();

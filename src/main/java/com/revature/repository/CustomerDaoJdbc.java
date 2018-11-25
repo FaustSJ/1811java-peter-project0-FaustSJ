@@ -84,7 +84,7 @@ public class CustomerDaoJdbc implements CustomerDao {
 	public boolean modifyCustomerBalance(Customer customer, double balance) {
 		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex = 0;
-			String sql = "(UPDATE CUSTOMER SET C_BALANCE = ? WHERE C_USERNAME = ?)";
+			String sql = "UPDATE CUSTOMER SET C_BALANCE = ? WHERE C_USERNAME = ?";
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
 			//replaces '?'
